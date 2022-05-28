@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lobbylayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+    <RelativeLayout
+        android:id="@+id/lobby_MessageBox"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="@android:color/darker_gray">
+
+        <ImageButton
+            android:id="@+id/lobby_imgButton"
+            android:layout_width="@dimen/showimg_ImageButton_size"
+            android:layout_height="@dimen/showimg_ImageButton_size"
+            android:layout_marginLeft="@dimen/showimg_ImageButton_marginLeft"
+            android:contentDescription="@string/face"
+            android:background="@android:color/darker_gray"/>
+        <!--            android:src="@drawable/ib_face"   -->
+
+        <EditText
+            android:id="@+id/lobby_MessageText"
+            android:layout_width="@dimen/sendMsg_EditText_width"
+            android:layout_height="@dimen/sendMsg_EditText_height"
+            android:layout_marginLeft="@dimen/sendMsg_EditText_marginLeft"
+
+            android:textSize="@dimen/sendMsg_EditText_textSize"
+            android:background="@android:color/darker_gray"/>
+        <!--            android:hint="@string/sendMsg_EditText_hint"-->
+
+        <Button
+            android:id="@+id/lobby_MessageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/sendMsg_Button_height"
+            android:layout_alignParentRight="true"
+
+            android:textSize="@dimen/sendMsg_Button_textSize"
+            android:background="@android:color/darker_gray"/>
+        <!--            android:text="@string/sendMsg_Button_text"-->
+
+    </RelativeLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lobby_choose_role"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/choose_role"
+            android:layout_marginBottom="30dp"
+            android:textSize="@dimen/choose_role_textSize"
+            />
+        <Button
+            android:id="@+id/lobby_button_stu"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:onClick="skipStu"
+            android:background="@drawable/btn_normal"
+            android:textColor="@color/white"
+            android:text="@string/Student"
+            android:textSize="@dimen/text_textSize"
+            />
+            <Button
+                android:id="@+id/lobby_button_tea"
+                android:layout_width="170dp"
+                android:layout_height="50dp"
+                android:onClick="skipTea"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_blue"
+                android:textColor="@color/white"
+                android:text="@string/Teacher"
+                android:textSize="@dimen/text_textSize"
+                />
+    </LinearLayout>-->
+<!--    <ListView-->
+<!--        android:id="@+id/list"-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_above="@+id/MessageBox"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:dividerHeight="@dimen/listMsg_ListView_dividerHeight" >-->
+<!--    </ListView>-->
+
+
+</RelativeLayout>

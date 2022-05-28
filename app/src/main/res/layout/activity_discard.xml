@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/discardlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    >
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/chatroom_MessageBox"-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:background="@android:color/darker_gray">-->
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/chatroom_imgButton"-->
+<!--            android:layout_width="@dimen/showimg_ImageButton_size"-->
+<!--            android:layout_height="@dimen/showimg_ImageButton_size"-->
+<!--            android:layout_marginLeft="@dimen/showimg_ImageButton_marginLeft"-->
+<!--            android:contentDescription="@string/face"-->
+<!--            android:src="@drawable/ib_face" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/chatroom_MessageText"-->
+<!--            android:layout_width="@dimen/sendMsg_EditText_width"-->
+<!--            android:layout_height="@dimen/sendMsg_EditText_height"-->
+<!--            android:layout_marginLeft="@dimen/sendMsg_EditText_marginLeft"-->
+<!--            android:hint="@string/sendMsg_EditText_hint"-->
+<!--            android:textSize="@dimen/sendMsg_EditText_textSize" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/chatroom_MessageButton"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="@dimen/sendMsg_Button_height"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:text="@string/sendMsg_Button_text"-->
+
+<!--            android:textSize="@dimen/sendMsg_Button_textSize"/>-->
+
+<!--    </RelativeLayout>-->
+<!--    &lt;!&ndash;    <Button&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:id="@+id/button_stu"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:layout_width="170dp"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:layout_height="50dp"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:onClick="skip_Student"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:background="@drawable/btn_normal"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:textColor="@color/white"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:text="@string/Student" />&ndash;&gt;-->
+<!--    <ListView-->
+<!--        android:id="@+id/chatroom_list"-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_above="@+id/chatroom_MessageBox"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:dividerHeight="@dimen/listMsg_ListView_dividerHeight" >-->
+<!--    </ListView>-->
+
+
+</RelativeLayout>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <!--抬头标题-->
+    <LinearLayout
+        android:id="@+id/tea_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/blue"
+        android:elevation="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tea_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="课程编号: CS000"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/tea_button_change_id"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="8dp"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@id/stu_id"
+            android:onClick="inputName"
+            android:background="@drawable/renew"
+            />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/tea_scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/stu_id"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:text="@string/stu_id" />-->
+            <!--    蓝牙图片-->
+            <RelativeLayout
+                android:id="@+id/tea_rl_bluetooth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/tea_layout_ser_ble"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/bg_ble_progress">
+
+                    <ProgressBar
+                        android:id="@+id/tea_progress_ser_bluetooth"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:indeterminateDrawable="@drawable/rotate_progressbar"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/tea_iv_ser_ble_status"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/icon_ble_on"
+                    android:onClick="openBluetooth"
+                    />
+
+                <TextView
+                    android:id="@+id/tea_tv_ser_ble_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/shower_stop"
+                    android:textColor="@color/blue"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tea_tv_click_advice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/tea_layout_ser_ble"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50dp"
+                    android:text="@string/click_advice"
+                    android:textColor="@color/blue" />
+            </RelativeLayout>
+            <!--    pic end    -->
+            <!--            <Button-->
+            <!--                android:id="@+id/button_on"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:onClick="on"-->
+            <!--                android:text="@string/on" />-->
+
+            <!--            <Button-->
+            <!--                android:id="@+id/button_input"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:onClick="inputName"-->
+            <!--                android:text="@string/input" />-->
+
+            <!--            <Button-->
+            <!--                android:id="@+id/button_list_all"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:onClick="listAvailable"-->
+            <!--                android:text="@string/list_All" />-->
+
+            <Button
+                android:id="@+id/tea_button_get_sign"
+                android:layout_width="170dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_blue"
+                android:textColor="@color/white"
+                android:onClick="visible"
+                android:text="@string/GetSign" />
+
+            <Button
+                android:id="@+id/tea_button_get_vis"
+                android:layout_width="170dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_blue"
+                android:textColor="@color/white"
+                android:onClick="visible"
+                android:text="@string/Visible" />
+
+<!--            <Button-->
+<!--                android:id="@+id/button_list"-->
+<!--                android:layout_width="170dp"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:background="@drawable/btn_blue"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:onClick="listConnected"-->
+<!--                android:text="@string/List" />-->
+
+
+            <Button
+                android:id="@+id/tea_button_get_data"
+                android:layout_width="170dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_blue"
+                android:textColor="@color/white"
+                android:onClick="getData"
+                android:text="@string/Data" />
+
+            <!--            <Button-->
+            <!--                android:id="@+id/button_off"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:onClick="off"-->
+            <!--                android:text="@string/off" />-->
+
+            <!--            <Button-->
+            <!--                android:id="@+id/button_change"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:onClick="change"-->
+            <!--                android:text="@string/change" />-->
+
+            <!--            <Button-->
+            <!--                android:id="@+id/button_compare"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:onClick="compare"-->
+            <!--                android:text="@string/compare" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_search"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="" />-->
+
+<!--            <ListView-->
+<!--                android:id="@+id/listView_a"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:visibility="visible" />-->
+
+<!--            <ListView-->
+<!--                android:id="@+id/listView_p"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:visibility="visible">-->
+<!--            </ListView>-->
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+    <!--</androidx.coordinatorlayout.widget.CoordinatorLayout>-->
